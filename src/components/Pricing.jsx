@@ -134,12 +134,26 @@ export default function Pricing() {
                 <span className="text-sm text-gray-400">{plan.period}</span>
               </div>
 
-              <a
-                href="#"
-                className={`block text-center font-bold px-5 py-3 rounded-xl transition-all duration-200 ${plan.ctaStyle}`}
-              >
-                {plan.cta}
-              </a>
+              {plan.name === 'Gratuito' ? (
+                <a
+                  href="#faq"
+                  className={`block text-center font-bold px-5 py-3 rounded-xl transition-all duration-200 ${plan.ctaStyle}`}
+                >
+                  {plan.cta}
+                </a>
+              ) : (
+                <button
+                  onClick={() => window.open(
+                    plan.name === 'Pro'
+                      ? 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=be7b89bf048745a592101cdde7223bf4'
+                      : 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=ba0e78feb7834fb1a2c48d7ac5f99354',
+                    '_blank'
+                  )}
+                  className={`block w-full text-center font-bold px-5 py-3 rounded-xl transition-all duration-200 ${plan.ctaStyle}`}
+                >
+                  {plan.cta}
+                </button>
+              )}
 
               <div className="h-px bg-[#2D3748]" />
 
