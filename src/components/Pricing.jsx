@@ -136,7 +136,9 @@ export default function Pricing() {
 
               {plan.name === 'Gratuito' ? (
                 <a
-                  href="#faq"
+                  href="https://lucky-cascaron-0fd4d2.netlify.app/?cadastro=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`block text-center font-bold px-5 py-3 rounded-xl transition-all duration-200 ${plan.ctaStyle}`}
                 >
                   {plan.cta}
