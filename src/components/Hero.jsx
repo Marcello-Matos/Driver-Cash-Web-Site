@@ -93,7 +93,7 @@ export default function Hero() {
             </div>
 
             {/* Celular flutuante sobre o vídeo */}
-            <div className='absolute -right-2 sm:right-1 lg:-right-5 top-1/2 -translate-y-1/2 w-[43%] max-w-[320px] rotate-[5deg]'>
+            <div className='absolute -right-2 sm:right-1 lg:-right-5 top-[45%] -translate-y-1/2 w-[43%] max-w-[320px] rotate-[5deg]'>
               <div className='animate-float relative drop-shadow-[0_45px_60px_rgba(0,0,0,0.75)]'>
                 <img src={celularImg} alt='Aplicativo DriverCash' className='w-full' />
               </div>
