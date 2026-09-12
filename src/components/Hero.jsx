@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react'
 import videoAnim from '../assets/video.mp4'
 import posterFoto from '../assets/imagem_carro.png'
 import celularImg from '../assets/celular.png'
-import Logo from './Logo'
 
 export default function Hero() {
   const ref = useRef(null)
@@ -94,9 +93,6 @@ export default function Hero() {
             <div className='absolute -right-2 sm:right-1 lg:-right-5 top-1/2 -translate-y-1/2 w-[33%] max-w-[230px] rotate-[5deg]'>
               <div className='animate-float relative drop-shadow-[0_45px_60px_rgba(0,0,0,0.75)]'>
                 <img src={celularImg} alt='Aplicativo DriverCash' className='w-full' />
-                <div className='absolute left-[50.7%] top-[16%] w-[36%] -translate-x-1/2'>
-                  <Logo className='w-full' />
-                </div>
               </div>
             </div>
           </div>
