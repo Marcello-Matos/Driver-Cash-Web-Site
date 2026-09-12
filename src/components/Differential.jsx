@@ -33,7 +33,7 @@ export default function Differential() {
         </div>
 
         <div ref={ref} className="section-hidden">
-          {/* Calculation visual */}
+          {/* Visual do cálculo */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             {/* Faturamento */}
             <div className="flex-1 bg-[#1E293B] border border-[#3B82F6]/40 rounded-2xl p-6 text-center max-w-xs w-full">
@@ -43,7 +43,7 @@ export default function Differential() {
               <div className="text-xs text-gray-500 mt-2">Todas as plataformas</div>
             </div>
 
-            {/* Minus */}
+            {/* Menos */}
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 rounded-full bg-[#EF4444]/10 border border-[#EF4444]/30 flex items-center justify-center text-2xl font-black text-[#EF4444]">
                 −
@@ -69,7 +69,7 @@ export default function Differential() {
               </div>
             </div>
 
-            {/* Equals */}
+            {/* Igual */}
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 rounded-full bg-[#22C55E]/10 border border-[#22C55E]/30 flex items-center justify-center text-2xl font-black text-[#22C55E]">
                 =
@@ -96,7 +96,7 @@ export default function Differential() {
             </div>
           </div>
 
-          {/* Bottom text */}
+          {/* Texto inferior */}
           <div className="text-center mt-10">
             <p className="text-gray-400 text-lg">
               Esse nível de clareza financeira é o que o{' '}

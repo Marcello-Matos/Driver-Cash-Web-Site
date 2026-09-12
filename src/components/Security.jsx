@@ -50,7 +50,7 @@ export default function Security() {
             ))}
           </div>
 
-          {/* Trust badges */}
+          {/* Selos de confiança */}
           <div className="flex flex-wrap items-center justify-center gap-6">
             {[
               { label: 'SSL/TLS', sub: 'Conexão segura' },

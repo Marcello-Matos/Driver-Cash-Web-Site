@@ -52,7 +52,7 @@ export default function Goals() {
         </div>
 
         <div ref={ref} className="section-hidden grid md:grid-cols-2 gap-8 items-start">
-          {/* Goals list */}
+          {/* Lista de metas */}
           <div className="space-y-5">
             {goals.map((g) => (
               <div key={g.label} className="bg-[#1E293B] border border-[#2D3748] rounded-2xl p-5">
@@ -74,7 +74,7 @@ export default function Goals() {
             ))}
           </div>
 
-          {/* Goal tips */}
+          {/* Dicas de metas */}
           <div className="bg-[#1E293B] border border-[#2D3748] rounded-2xl p-8 space-y-6">
             <div className="w-16 h-16 bg-[#22C55E]/10 rounded-2xl flex items-center justify-center text-4xl">
               🎯

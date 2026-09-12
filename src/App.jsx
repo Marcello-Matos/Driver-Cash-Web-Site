@@ -1,3 +1,4 @@
+﻿import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import ImpactBanner from './components/ImpactBanner'
@@ -18,8 +19,29 @@ import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
 
 function App() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return
+          const hidden = entry.target.querySelectorAll('.section-hidden')
+          hidden.forEach((el, i) => {
+            setTimeout(() => {
+              el.classList.remove('section-hidden')
+              el.classList.add('section-visible')
+            }, i * 90)
+          })
+          observer.unobserve(entry.target)
+        })
+      },
+      { threshold: 0.05 }
+    )
+    document.querySelectorAll('section, footer').forEach((s) => observer.observe(s))
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <div className="bg-brand-dark min-h-screen overflow-x-hidden">
+    <div className='bg-brand-dark min-h-screen overflow-x-hidden'>
       <Navbar />
       <Hero />
       <ImpactBanner />

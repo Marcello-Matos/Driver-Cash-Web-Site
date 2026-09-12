@@ -31,7 +31,7 @@ export default function Navbar() {
           <img src="/logo.png" alt="Driver Cash" className="h-10 w-auto" />
         </a>
 
-        {/* Desktop Links */}
+        {/* Links desktop */}
         <ul className="hidden md:flex items-center gap-6">
           {links.map((l) => (
             <li key={l.href}>
@@ -45,7 +45,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Desktop CTA */}
+        {/* CTA desktop */}
         <a
           href="#planos"
           className="hidden md:inline-flex items-center gap-2 bg-[#22C55E] text-black font-bold px-5 py-2.5 rounded-lg text-sm hover:bg-[#16A34A] transition-colors duration-200"
@@ -53,7 +53,7 @@ export default function Navbar() {
           Começar agora
         </a>
 
-        {/* Hamburger */}
+        {/* Menu hambúrguer */}
         <button
           className="md:hidden flex flex-col gap-1.5 p-2 rounded-md hover:bg-white/5 transition-colors"
           onClick={() => setOpen(!open)}
@@ -71,7 +71,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Menu mobile */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
           open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'

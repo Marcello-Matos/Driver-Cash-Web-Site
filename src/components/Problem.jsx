@@ -55,7 +55,7 @@ export default function Problem() {
   return (
     <section id="beneficios" className="py-20 px-4 bg-[#111827]">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
+        {/* Cabeçalho */}
         <div className="text-center mb-14">
           <span className="inline-block bg-[#22C55E]/10 border border-[#22C55E]/30 text-[#22C55E] text-xs font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">
             O problema
@@ -68,7 +68,7 @@ export default function Problem() {
           </p>
         </div>
 
-        {/* Cards */}
+        {/* Cartões */}
         <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {problems.map((p) => (
             <div

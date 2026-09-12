@@ -24,13 +24,13 @@ export default function Guarantee() {
           ref={ref}
           className="section-hidden bg-[#1E293B] border border-[#22C55E]/30 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden"
         >
-          {/* Background glow */}
+          {/* Brilho de fundo */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="w-64 h-64 rounded-full bg-[#22C55E]/5 blur-3xl" />
           </div>
 
           <div className="relative">
-            {/* Shield icon */}
+            {/* Ícone de escudo */}
             <div className="w-20 h-20 bg-[#22C55E]/10 border border-[#22C55E]/30 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-10 h-10 text-[#22C55E]">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.993 11.993 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>

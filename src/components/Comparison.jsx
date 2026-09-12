@@ -46,7 +46,7 @@ export default function Comparison() {
         </div>
 
         <div ref={ref} className="section-hidden bg-[#1E293B] border border-[#2D3748] rounded-2xl overflow-hidden">
-          {/* Header */}
+          {/* Cabe
           <div className="grid grid-cols-3 bg-[#111827] border-b border-[#2D3748]">
             <div className="p-4 text-sm text-gray-400 font-medium">Funcionalidade</div>
             <div className="p-4 text-center border-x border-[#2D3748]">
@@ -57,7 +57,7 @@ export default function Comparison() {
             </div>
           </div>
 
-          {/* Rows */}
+          {/* Linhas */}
           {rows.map((row, i) => (
             <div
               key={row.label}
