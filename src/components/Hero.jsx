@@ -1,6 +1,7 @@
-﻿import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import videoAnim from '../assets/video.mp4'
 import posterFoto from '../assets/imagem_carro.png'
+import celularImg from '../assets/celular.png'
 
 export default function Hero() {
   const ref = useRef(null)
@@ -85,7 +86,12 @@ export default function Hero() {
               muted
               loop
               playsInline
-              className='relative w-full max-w-sm rounded-[2rem] border-[3px] border-[#2D3748] shadow-2xl'
+              className='relative w-full max-w-lg rounded-[2rem] border-[3px] border-[#2D3748] shadow-2xl'
+            />
+            <img
+              src={celularImg}
+              alt='Aplicativo Driver Cash'
+              className='absolute -bottom-12 -right-2 md:-right-10 w-44 md:w-56 animate-float drop-shadow-2xl'
             />
           </div>
         </div>
