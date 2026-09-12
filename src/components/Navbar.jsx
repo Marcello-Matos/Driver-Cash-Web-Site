@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Logo from './Logo'
 
 const links = [
   { href: '#inicio', label: 'Início' },
@@ -27,8 +28,8 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <a href="#inicio" className="flex items-center gap-2 flex-shrink-0">
-          <img src="/logo.png" alt="Driver Cash" className="h-10 w-auto" />
+        <a href="#inicio" className="logo-link flex items-center gap-2 flex-shrink-0">
+          <Logo className="h-10 md:h-11 w-auto" />
         </a>
 
         {/* Desktop Links */}

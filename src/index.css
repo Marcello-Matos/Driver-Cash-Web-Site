@@ -35,3 +35,48 @@
     transform: translateY(30px);
   }
 }
+
+/* --- Logo Driver Cash animado --- */
+@keyframes logoCarDraw {
+  from { stroke-dashoffset: 460; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes logoGroupIn {
+  from { opacity: 0; transform: translateX(-18px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes logoTextIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes logoShineSweep {
+  from { transform: translateX(-200px) skewX(-14deg); }
+  to { transform: translateX(1120px) skewX(-14deg); }
+}
+
+@keyframes wheelSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.logo-car-group { opacity: 0; animation: logoGroupIn 0.9s ease-out 0.25s forwards; transition: transform 0.45s ease; }
+.logo-car-body { stroke-dasharray: 460; stroke-dashoffset: 460; animation: logoCarDraw 1.5s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards; }
+.logo-car-detail { opacity: 0; animation: logoTextIn 0.7s ease-out 1.1s forwards; }
+.logo-text-driver { opacity: 0; animation: logoTextIn 0.8s ease-out 1.15s forwards; }
+.logo-text-cash { opacity: 0; animation: logoTextIn 0.8s ease-out 1.4s forwards; }
+.logo-shine { animation: logoShineSweep 8s ease-in-out 2.4s infinite; }
+.logo-tile { transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1); transform-box: fill-box; transform-origin: center; }
+.logo-link:hover .logo-tile { transform: translateY(-3px) scale(1.03); }
+.logo-link:hover .logo-car-group { transform: translateX(7px); }
+.logo-wheel { transform-box: fill-box; transform-origin: center; }
+.logo-link:hover .logo-wheel { animation: wheelSpin 0.7s ease-in-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-car-group, .logo-car-detail, .logo-text-driver, .logo-text-cash { animation: none; opacity: 1; transform: none; }
+  .logo-car-body { animation: none; stroke-dashoffset: 0; }
+  .logo-shine { animation: none; }
+  .logo-link:hover .logo-wheel { animation: none; }
+}

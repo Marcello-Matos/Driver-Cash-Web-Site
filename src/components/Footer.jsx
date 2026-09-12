@@ -1,3 +1,4 @@
+﻿import Logo from './Logo'
 export default function Footer() {
   const year = new Date().getFullYear()
 
@@ -8,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
-              <img src="/logo.png" alt="Driver Cash" className="h-10 w-auto" />
+              <Logo className="h-10 md:h-11 w-auto" />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
               O aplicativo financeiro feito para motoristas de app. Controle faturamento, despesas e
