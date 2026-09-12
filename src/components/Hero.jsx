@@ -23,7 +23,7 @@ export default function Hero() {
       </div>
 
       <div ref={ref} className='section-hidden max-w-6xl mx-auto w-full'>
-        <div className='grid md:grid-cols-2 gap-12 lg:gap-16 items-center'>
+        <div className='grid md:grid-cols-[1fr_1.3fr] gap-10 lg:gap-14 items-center'>
           {/* Coluna esquerda */}
           <div className='space-y-6 text-center md:text-left'>
             <div className='inline-flex items-center gap-2 bg-[#22C55E]/10 border border-[#22C55E]/30 rounded-full px-4 py-1.5'>
@@ -76,9 +76,6 @@ export default function Hero() {
 
           {/* Coluna direita - animação do usuário */}
           <div className='relative flex justify-center items-center'>
-            <div className='absolute inset-0 flex items-center justify-center'>
-              <div className='w-72 h-72 rounded-full bg-[#22C55E]/15 blur-3xl' />
-            </div>
             <video
               src={videoAnim}
               poster={posterFoto}
@@ -86,12 +83,12 @@ export default function Hero() {
               muted
               loop
               playsInline
-              className='relative w-full max-w-lg rounded-[2rem] border-[3px] border-[#2D3748] shadow-2xl'
+              className='relative w-full shadow-2xl'
             />
             <img
               src={celularImg}
               alt='Aplicativo Driver Cash'
-              className='absolute -bottom-12 -right-2 md:-right-10 w-44 md:w-56 animate-float drop-shadow-2xl'
+              className='absolute -bottom-14 -right-4 md:-right-12 w-48 md:w-64 animate-float drop-shadow-2xl'
             />
           </div>
         </div>
