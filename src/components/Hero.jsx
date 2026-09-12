@@ -1,10 +1,11 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import videoAnim from '../assets/video.mp4'
 import posterFoto from '../assets/imagem_carro.png'
 import celularImg from '../assets/celular.png'
 
 export default function Hero() {
   const ref = useRef(null)
+  const [videoReady, setVideoReady] = useState(false)
 
   useEffect(() => {
     if (ref.current) {
@@ -82,7 +83,9 @@ export default function Hero() {
                 muted
                 loop
                 playsInline
-                className='w-full aspect-video object-cover'
+                preload='auto'
+                onCanPlay={() => setVideoReady(true)}
+                className={('w-full aspect-video object-cover transition-opacity duration-700 ' + (videoReady ? 'opacity-100' : 'opacity-0'))}
               />
               {/* Máscara escura em degradê */}
               <div className='absolute inset-0 bg-gradient-to-r from-[#050B14]/85 via-black/30 to-black/45' />
