@@ -1,7 +1,7 @@
 export default function ImpactBanner() {
   return (
     <section className="relative overflow-hidden py-16 px-4">
-      {/* Fundo */}
+      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#052e16] via-[#14532d] to-[#052e16]" />
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#22C55E] to-transparent" />

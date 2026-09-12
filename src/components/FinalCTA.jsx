@@ -19,7 +19,7 @@ export default function FinalCTA() {
 
   return (
     <section className="py-24 px-4 bg-[#0F172A] relative overflow-hidden">
-      {/* Gradientes de fundo */}
+      {/* Background gradients */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#22C55E]/8 rounded-full blur-3xl" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#22C55E]/30 to-transparent" />
@@ -43,7 +43,7 @@ export default function FinalCTA() {
           e passaram a tomar decisões financeiras inteligentes com o Driver Cash.
         </p>
 
-        {/* Prova social */}
+        {/* Social proof mini */}
         <div className="flex items-center justify-center gap-1 mb-8">
           {[1,2,3,4,5].map((i) => (
             <svg key={i} viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 text-yellow-400">
@@ -53,7 +53,7 @@ export default function FinalCTA() {
           <span className="text-gray-300 text-sm ml-2 font-medium">4.9/5 — 2.847 avaliações</span>
         </div>
 
-        {/* Botões de CTA */}
+        {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#planos"

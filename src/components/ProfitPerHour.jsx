@@ -33,7 +33,7 @@ export default function ProfitPerHour() {
         </div>
 
         <div ref={ref} className="section-hidden grid md:grid-cols-2 gap-8 items-center">
-          {/* Card da fórmula */}
+          {/* Formula card */}
           <div className="bg-[#1E293B] border border-[#2D3748] rounded-2xl p-8 space-y-5">
             <h3 className="text-lg font-bold text-white">Exemplo real de cálculo</h3>
 
@@ -69,7 +69,7 @@ export default function ProfitPerHour() {
             </div>
           </div>
 
-          {/* Por que importa */}
+          {/* Why it matters */}
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-bold text-white mb-3">Por que isso importa?</h3>

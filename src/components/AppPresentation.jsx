@@ -15,7 +15,7 @@ function AppScreenMockup() {
             <span className="text-[10px] text-gray-400">●●●</span>
           </div>
 
-          {/* Abas de navega
+          {/* Navigation tabs */}
           <div className="flex gap-1 bg-[#111827] rounded-xl p-1">
             {['Hoje','Semana','Mês'].map((t, i) => (
               <button
@@ -29,14 +29,14 @@ function AppScreenMockup() {
             ))}
           </div>
 
-          {/* Número de destaque */}
+          {/* Big number */}
           <div className="bg-[#1E293B] rounded-2xl p-4 border border-[#2D3748] text-center">
             <p className="text-[9px] text-gray-400 mb-1">Lucro líquido — Esta semana</p>
             <p className="text-2xl font-black text-[#22C55E]">R$ 1.847</p>
             <p className="text-[9px] text-green-400 mt-1">+23% vs semana passada</p>
           </div>
 
-          {/* 3 linhas */}
+          {/* 3 rows */}
           {[
             { icon: '📈', label: 'Faturamento', value: 'R$ 2.680', color: 'text-blue-400' },
             { icon: '📉', label: 'Despesas', value: 'R$ 833', color: 'text-red-400' },
@@ -51,7 +51,7 @@ function AppScreenMockup() {
             </div>
           ))}
 
-          {/* Plataformas */}
+          {/* Platforms */}
           <div className="bg-[#1E293B] rounded-xl p-3 border border-[#2D3748]">
             <p className="text-[9px] text-gray-400 mb-2">Por plataforma</p>
             <div className="space-y-1.5">
@@ -97,10 +97,10 @@ export default function AppPresentation() {
     <section className="py-20 px-4 bg-[#0F172A]">
       <div ref={ref} className="section-hidden max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Esquerda: mockup */}
+          {/* Left: mockup */}
           <AppScreenMockup />
 
-          {/* Direita: texto */}
+          {/* Right: text */}
           <div className="space-y-6 text-center md:text-left">
             <span className="inline-block bg-[#22C55E]/10 border border-[#22C55E]/30 text-[#22C55E] text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wide">
               Conheça o Driver Cash
