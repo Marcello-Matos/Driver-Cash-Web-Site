@@ -22,8 +22,8 @@ export default function Hero() {
         <div className='absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#22C55E]/20 to-transparent' />
       </div>
 
-      <div ref={ref} className='section-hidden max-w-6xl mx-auto w-full'>
-        <div className='grid md:grid-cols-[1fr_1.3fr] gap-10 lg:gap-14 items-center'>
+      <div ref={ref} className='section-hidden max-w-7xl mx-auto w-full'>
+        <div className='grid md:grid-cols-[0.8fr_1.7fr] gap-8 lg:gap-10 items-center'>
           {/* Coluna esquerda */}
           <div className='space-y-6 text-center md:text-left'>
             <div className='inline-flex items-center gap-2 bg-[#22C55E]/10 border border-[#22C55E]/30 rounded-full px-4 py-1.5'>
@@ -88,7 +88,7 @@ export default function Hero() {
             <img
               src={celularImg}
               alt='Aplicativo Driver Cash'
-              className='absolute -bottom-14 -right-4 md:-right-12 w-48 md:w-64 animate-float drop-shadow-2xl'
+              className='absolute -bottom-14 -right-4 md:-right-12 w-52 md:w-72 animate-float drop-shadow-2xl'
             />
           </div>
         </div>
