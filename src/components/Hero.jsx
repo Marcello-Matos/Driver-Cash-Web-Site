@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import videoAnim from '../assets/video.mp4'
-import posterFoto from '../assets/imagem_carro.png'
+import posterFoto from '../assets/poster_video.jpg'
 import celularImg from '../assets/celular.png'
 
 export default function Hero() {
@@ -84,7 +84,7 @@ export default function Hero() {
                 loop
                 playsInline
                 preload='auto'
-                onCanPlay={() => setVideoReady(true)}
+                onLoadedData={() => setVideoReady(true)}
                 className={('w-full aspect-video object-cover transition-opacity duration-700 ' + (videoReady ? 'opacity-100' : 'opacity-0'))}
               />
               {/* Máscara escura em degradê */}
