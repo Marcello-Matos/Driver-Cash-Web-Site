@@ -80,3 +80,21 @@
   .logo-shine { animation: none; }
   .logo-link:hover .logo-wheel { animation: none; }
 }
+
+/* --- Foto do motorista: animacao apenas no celular --- */
+@keyframes fotoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@media (max-width: 767px) {
+  .foto-motorista {
+    animation: fotoFloat 5s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .foto-motorista {
+    animation: none !important;
+  }
+}
